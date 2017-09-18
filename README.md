@@ -13,3 +13,7 @@ PUT: localhost:8888/account/topup/1/5000
 
 API for money transfer from account1 to another account
 POST: localhost:8888/account/transfer/1/2/500
+
+
+running the jar:
+java -jar /target/restWS-0.0.1-SNAPSHOT.jar
