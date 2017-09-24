@@ -1,6 +1,7 @@
 package com.revolut.test.restWS;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -13,7 +14,6 @@ import javax.ws.rs.core.Response;
 
 import com.revolut.test.restWS.model.Account;
 import com.revolut.test.restWS.service.AccountServiceImpl;
-
 
 @Path("/account")
 public class AccountController {
@@ -49,12 +49,12 @@ public class AccountController {
 		return accountService.getAccountBalance(accountNumber);
 	}
 	
-	@GET
+	/*@GET
     @Path("/getAllAccounts")
 	public String getAllAccounts() {
-		ArrayList<Account> allAccounts = new ArrayList<>(accountService.getAllAccounts());
+		List<Account> allAccounts = new ArrayList<>(accountService.getAllAccounts());
         return allAccounts.toString();
-	}
+	}*/
 	
 	@PUT
 	@Path("/topup/{accountNo}/{amount}")
